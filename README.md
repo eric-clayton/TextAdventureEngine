@@ -15,13 +15,14 @@ First create a text file for setting up the game in the setup folder:
 
 Create text files for each room in the rooms folder with the following supported elements:
 - Room id. Must be a unique id. Example:
-  ```
-  (id)1(/id)
-  ```
+```
+(id)1(/id)
+```
 
 - Story of the room displayed on entrance of the room. Example: 
 ```
-(story) You wake up in a a room with no belongings and the room is dark. You can hear rats in the distance squeaking as you move around the room you notice that you are in a jail cell. You find there is a key hanging on the wall (/story)
+(story) You wake up in a a room with no belongings and the room is dark. You can hear rats in the distance squeaking as you move around the
+room, you notice that you are in a jail cell. You find there is a key hanging on the wall (/story)
 ```
 
 - Pickup items
