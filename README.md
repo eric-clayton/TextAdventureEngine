@@ -7,23 +7,26 @@
  -
 Elements are contained within ```(element)(/element)``` blocks.
 
-First create a text file for setting up the game in the setup folder:
-> Setup player hp example: ```(player)(hp)10(/hp)(/player)```
+First create a text file for setting up the game in the setup folder: 
+- Setup player hp example:
+```
+(player)(hp)10(/hp)(/player)
+```
 
 Create text files for each room in the rooms folder with the following supported elements:
-- Room id:
+- Room id. Must be a unique id. Example:
+  ```
+  (id)1(/id)
+  ```
 
-  Must be a unique id. Example: ```(id)1(/id)```
-
-- Story of the room contained within ```(story)(/story) blocks```
-
-Displayed on entrance of the room. Example: 
-```(story) You wake up in a a room with no belongings and the room is dark. You can hear rats in the distance squeaking as you move around the room you notice that you are in a jail cell. You find there is a key hanging on the wall (/story)```
+- Story of the room displayed on entrance of the room. Example: 
+```
+(story) You wake up in a a room with no belongings and the room is dark. You can hear rats in the distance squeaking as you move around the room you notice that you are in a jail cell. You find there is a key hanging on the wall (/story)
+```
 
 - Pickup items
 
-Listed as objects in the room that can be picked up. When selected user has the option to pick up or identify. Picking up the item adds the item to the player's inventory. Identifying the item shows the items description and, if it is not a key, the value. 
-Example: 
+Listed as objects in the room that can be picked up. When selected user has the option to pick up or identify. Picking up the item adds the item to the player's inventory. Identifying the item shows the items description and, if it is not a key, the value. Example: 
 ``` 
     1. Dagger
     2. Health potion
@@ -59,8 +62,8 @@ Example: ```(key)(title)Dungeon key(/title) (id)2(/id) (description)A key that a
 - Locked or  unlocked room. 
 
 Rooms are unlocked by the key that has an id matching the room id. 
-Locked room example: (locked)true(/locked)
-Unlocked room example: (locked)false(/locked)
+Locked room example: ```(locked)true(/locked)```
+Unlocked room example: ```(locked)false(/locked)```
 
 - Enemy
 
