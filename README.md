@@ -11,16 +11,15 @@ First create a text file for setting up the game in the setup folder:
 > Setup player hp example: (player)(hp)10(/hp)(/player)
 
 Create text files for each room in the rooms folder with the following supported elements:
-- Room id
-> Must be a unique id. Example: (id)1(/id) 
+- Room id:
+  Must be a unique id. Example: (id)1(/id) 
 
-- Story of the room contained within (story)(/story) blocks 
-> Displayed on entrance of the room. Example: (story) You wake up in a a room with no belongings and the room is dark. You can hear rats in the distance squeaking as you move around the room you notice that you are in a jail cell. You find there is a key hanging on the wall (/story)
+- Story of the room contained within (story)(/story) blocks
+  Displayed on entrance of the room. Example: (story) You wake up in a a room with no belongings and the room is dark. You can hear rats in the distance squeaking as you move around the room you notice that you are in a jail cell. You find there is a key hanging on the wall (/story)
 
 - Pickup items
-> listed as objects in the room that can be picked up. When selected user has the option to pick up or identify. Picking up the item adds the item to the player's inventory. Identifying the item shows the items description and, if it is not a key, the value. 
-
-> Example: 
+listed as objects in the room that can be picked up. When selected user has the option to pick up or identify. Picking up the item adds the item to the player's inventory. Identifying the item shows the items description and, if it is not a key, the value. 
+Example: 
     1. Dagger
     2. Health potion
     3. Iron chest piece
@@ -36,24 +35,24 @@ Create text files for each room in the rooms folder with the following supported
   
 
 1. Weapon
-> Example: (weapon)(title)Dagger(/title) (value)5(/value) (description)A small blade capable of light damage to your foes.(/description)
+Example: (weapon)(title)Dagger(/title) (value)5(/value) (description)A small blade capable of light damage to your foes.(/description)
 
 2. Potion
-> Example: (potion)(title)Health potion(/title) (value)10(/value) (description)A bottle with red liquid inside it appears to give life.(/description)(/potion)
+Example: (potion)(title)Health potion(/title) (value)10(/value) (description)A bottle with red liquid inside it appears to give life.(/description)(/potion)
 
 3. Armor
-> Example: (armor)(title)Iron chest piece(/title) (value)2(/value) (description)A chest piece made from rusted iron it should protect you from light blows.(/description)(/armor)
+Example: (armor)(title)Iron chest piece(/title) (value)2(/value) (description)A chest piece made from rusted iron it should protect you from light blows.(/description)(/armor)
 
-4. Key
-> Example: (key)(title)Dungeon key(/title) (id)2(/id) (description)A key that appears to have an emerald top.(/description)(/key)
+5. Key
+Example: (key)(title)Dungeon key(/title) (id)2(/id) (description)A key that appears to have an emerald top.(/description)(/key)
 
 - Locked or  unlocked room. 
->Rooms are unlocked by the key that has an id matching the room id. 
+Rooms are unlocked by the key that has an id matching the room id. 
 Locked room example: (locked)true(/locked)
 Unlocked room example: (locked)false(/locked)
 
 - Enemy
-> Example: (enemy)(title)Rat(/title) (hp)10(/hp) (dmg)1(/dmg) (armor)0(/armor)(description)A little rodent looking for cheese.(/enemy)
+Example: (enemy)(title)Rat(/title) (hp)10(/hp) (dmg)1(/dmg) (armor)0(/armor)(description)A little rodent looking for cheese.(/enemy)
 
 Connecting rooms
 -
